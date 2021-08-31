@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  mode: 'universal',
+  ssr: true,
   /*
   ** Headers of the page
   */
@@ -56,7 +56,7 @@ export default {
     prefix: '/api/'
   },
   proxy: {
-    '/api/': { target: 'http://localhost:8000' }
+    '/api/': { target: 'https://amoeba-back.herokuapp.com/' }
   },
   /*
   ** vuetify module configuration
